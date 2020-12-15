@@ -1,5 +1,8 @@
 const AWS = require("aws-sdk");
 
+// ロギング機能を有効
+AWS.config.logger = console;
+
 async function main() {
     //const docClient = new AWS.DynamoDB.DocumentClient({ region: "ap-northeast-1" });
 
